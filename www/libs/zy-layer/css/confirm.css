@@ -1,0 +1,25 @@
+.modal-span{
+    display: block;
+    height: 50px;
+    /*background-color: red;*/
+    position: absolute;
+    bottom: 0;
+    left: calc(50%);
+    border-left:1px solid silver;
+    
+}
+.modal-btn-left,.modal-btn-right{
+    display: block;
+    width: 49%;
+    height: 48%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    line-height: 5px;
+    cursor: pointer;
+}
+.modal-btn-right{
+    left:auto;
+    right: 0;
+}

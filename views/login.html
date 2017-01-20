@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/bootstrap.css"/>
+    <style>
+        html {
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            font-family: 微软雅黑,serif;
+            text-align: center;
+            font-size: 30px;
+            background-color: rgba(0, 0, 0, .2);
+            padding-top: 20px;
+        }
+        #title>span{
+            color: red;
+        }
+        nav {
+            font-size: 20px;
+            color: skyblue;
+            padding-bottom: 10px;
+        }
+        main {
+            margin: 0 auto;
+            width: 400px;
+            height: 300px;
+            box-shadow: 0 0 40px silver;
+            background-color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        main h3 {
+            color: skyblue;
+        }
+        main input {
+            outline: none;
+            border-radius: 2px;
+            border: 1px solid silver;
+        }
+    </style>
+</head>
+<body>
+<div id="title"><img src="/img/img/favicon.ico" alt=""/><span>博客系统</span>&nbsp;管理后台</div>
+<nav>&copy;公司名字</nav>
+<main>
+    <div class="form-group">
+        <h3><img src="/img/img/favicon.ico" alt=""/>
+            请输入您的登录信息
+        </h3>
+    </div>
+    <form>
+        <div class="form-group">
+            <input type="text" name="username" placeholder="请输入用户名"/>
+        </div>
+        <div class="form-group">
+            <input type="password" name="password" placeholder="请输入密码"/>
+        </div>
+        <div class="form-group pull-right" style="margin-right: 28px">
+            <input type="submit" value="登录" class="btn btn-info"/>
+        </div>
+    </form>
+</main>
+
+
+<!--模态框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">博客系统</h4>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/jquery-3.1.1.min.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/scripts/login.js"></script>
+</body>
+</html>
