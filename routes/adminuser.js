@@ -129,8 +129,8 @@ router.post('/admin/search',(req,res)=>{
         }
         res.render('adminuser',{
             data:result
-        })
-    })
+        });
+    });
 });
 
 

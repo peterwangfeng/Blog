@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/libs/zy-layer/css/alert.css">
     <style>
         body {
-            padding-top: 60px;
+            padding-top: 100px;
             padding-bottom: 100px;
         }
 
@@ -41,8 +41,8 @@
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#18aae6;">
-    <div class="container dropdown">
-        <a class="navbar-brand" href="/admin/adminuser" style="color: #fff;">
+    <div class="container" style="margin-top: 15px">
+        <a class="navbar-brand" href="/admin/adminuser" style="color: #fff;font-size: 40px">
             博客管理后台</a>
         <div class="navbar-text pull-right text-right">
             <!--<span id="ask" onclick="location.href='/api/ask'"><span class="glyphicon glyphicon-plus"></span>提问</span>-->
@@ -50,19 +50,23 @@
             <span id="user" class="dropdown-toggle" data-toggle="dropdown">
                         <!--<span class="glyphicon glyphicon-user"></span>-->
                 <!--<span>{{user}}</span>-->
-                admin
             </span>
-            <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
-                <li><a class="text-right" href="/api/user">个人资料</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a class="text-right" href="/user/signout">退出</a></li>
-            </ul>
+
             <!--{{else}}-->
             <!--<span onclick="location.href='/api/signin'">-->
             <!--<span class="glyphicon glyphicon-user"></span>-->
             <!--登录-->
             <!--</span>-->
             <!--{{/if}}-->
+        </div>
+        <div class="pull-right navbar-text dropdown">
+            <img data-toggle="dropdown" src="/img/be.jpg" alt="" style="border-radius: 50%;width: 50px;height: 50px;"/>
+            <span class="caret" style="font-size: 20px"></span>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
+                <li><a class="text-right" href="#">个人资料</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a class="text-right" href="#">退出</a></li>
+            </ul>
         </div>
     </div>
 </nav>
@@ -105,7 +109,7 @@
             <th>{{info.name}}</th>
             <th>{{info.phone}}</th>
             <th>
-                <a href="">修改</a>
+                <a href="/admin/edit">修改</a>
                 /
                 <a href="#" id="phone1">删除</a>
             </th>
